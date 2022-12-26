@@ -1,5 +1,9 @@
 <template>
   <main>
-    <p>10:30 pm</p>
+    <DateComponent />
   </main>
 </template>
+
+<script setup>
+import DateComponent from '../components/DateComponent.vue'
+</script>
