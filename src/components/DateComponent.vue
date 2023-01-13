@@ -20,7 +20,6 @@ export default {
   mounted() {
     this.timer = setInterval(() => {
       this.currentTime = time.getFullTime();
-      console.log('now');
   }, 1000)
   }
 }
@@ -28,7 +27,14 @@ export default {
 
 <style scoped>
 h1 {
-    font-weight: 500;
-    font-size: 2.6rem;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20rem;
+}
+
+@media all and (max-device-width: 720px){
+    h1 {
+        font-size: 15rem;
+    }
 }
 </style>

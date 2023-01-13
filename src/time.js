@@ -49,7 +49,7 @@ function getMeridiem() {
 }
 
 function getFullTime() {
-    return `${getHours()}:${getMinutes()}:${getSeconds()}`
+    return `${getHours()}:${getMinutes()}`
 }
 
 export default
