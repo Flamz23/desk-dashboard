@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="fscreen">
         <h1>
           {{ currentTime }}
         </h1>
@@ -25,16 +25,30 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 h1 {
-    font-family: 'Product Sans', sans-serif;
-    font-weight: 100;
-    font-size: 20rem;
+    font-family: 'Product Sans Light', sans-serif;
+    font-size: 50rem;
+
+    text-align: center;
+    color: #F8F9FA;
+}
+
+@media all and (max-device-width: 1920px){
+    h1 {
+        font-size: 40rem;
+    }
+}
+
+@media all and (max-device-width: 1080px){
+    h1 {
+        font-size: 30rem;
+    }
 }
 
 @media all and (max-device-width: 720px){
     h1 {
-        font-size: 15rem;
+        font-size: 12rem;
     }
 }
 </style>
