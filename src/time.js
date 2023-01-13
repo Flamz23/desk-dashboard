@@ -5,6 +5,7 @@
 
 
 function getHours() {
+    var date = new Date();
     var hours = date.getHours();
 
     if (hours < 10)
@@ -15,6 +16,7 @@ function getHours() {
 
 
 function getMinutes() {
+    var date = new Date();
     var minutes = date.getMinutes();
 
     if (minutes < 10)
@@ -25,6 +27,7 @@ function getMinutes() {
 
 
 function getSeconds() {
+    var date = new Date();
     var seconds = date.getSeconds();
 
     if (seconds < 10)
@@ -35,6 +38,7 @@ function getSeconds() {
 
 // returns the correct meridian for the current time
 function getMeridiem() {
+    var date = new Date();
     var period = date.getHours();
 
     if (period >= 12) {
@@ -44,10 +48,15 @@ function getMeridiem() {
     return "am";
 }
 
+function getFullTime() {
+    return `${getHours()}:${getMinutes()}:${getSeconds()}`
+}
+
 export default
     {
         getHours,
         getMinutes,
         getSeconds,
-        getMeridiem
+        getMeridiem,
+        getFullTime,
     }

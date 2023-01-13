@@ -4,6 +4,12 @@
   </main>
 </template>
 
-<script setup>
+<script>
 import DateComponent from '../components/DateComponent.vue'
+
+export default {
+  components: {
+    DateComponent
+  }
+}
 </script>
