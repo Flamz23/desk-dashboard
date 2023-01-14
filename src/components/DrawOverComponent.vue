@@ -1,58 +1,89 @@
 <template>
     <nav class="drawover-nav">
-        <ul class="setting-list">
-            <li>
-                <div class="icon-wrapper">
+        <div class="setting-list">
+            <button v-for="items in settingItems">
+                <!-- <div class="icon-wrapper"> -->
                     <IconSettings />
-                </div>                
-            </li>
-        </ul>
+                <!-- </div> -->
+                <p> 
+                    {{ items.desc }} 
+                </p>                
+            </button>
+        </div>
     </nav>
 </template>
 
-<script setup>
+<script>
 import IconSettings from './icons/IconSettings.vue';
 import IconFullscreen from './icons/IconFullscreen.vue';
+
+export default {
+  data() {
+    return {
+      settingItems: [{ desc: 'Fullscreen' }, { desc: 'Seconds' }, { desc: 'AM/PM' }, { desc: 'Date' }, { desc: 'Dark mode' }, { desc: 'Weather' }]
+    }
+  },
+
+  components: {
+    IconSettings
+  }
+}
 </script>
 
 <style>
 .drawover-nav {
     display: flex;
 
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    margin: 0.5rem;
+    right: 0;
+    padding: 0.6rem;
+}
 
-    width: 40%;
-    min-width: 20rem;
-    height: auto;
-    padding: 0.5rem;
-    
+.setting-list {
+    display: flex;
+    justify-content: space-evenly;
 
-    border-radius: 0.8rem;
+    width: 30%;
+    min-width: 27rem;
+    margin: auto;
+    padding: 0.6rem;
+    border-radius: 0.7rem;
 
     background-color: #343A40;
 }
 
-.setting-list {
-    width: 100%;
-    padding: 0;
+.setting-list > button {
+    border: none;
+    color: #ADB5BD;
+    background-color: #343A40;
 }
 
-.setting-list > li {
-    margin: 0.4rem 0 0.4rem 0;
-    border-radius: 0.8rem;
-    background-color: #495057;
+.setting-list > button > p {
+    white-space: nowrap;
 }
+/* .drawover-nav:hover  {
+    transform: translateY(7rem);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .icon-wrapper {
+    margin: auto;
+    padding: 0.2rem;
     border: none;
-    border-color: #6C757D;
     border-radius: 50%;
     background-color: #212529;
 }
+
 svg {
-    fill: #CED4DA;
+    fill: #6C757D;
+}
+
+svg:hover  {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

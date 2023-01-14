@@ -29,7 +29,6 @@ export default {
 h1 {
     font-family: 'Product Sans Light', sans-serif;
     font-size: 50rem;
-
     margin: auto;
     color: #F8F9FA;
 }
