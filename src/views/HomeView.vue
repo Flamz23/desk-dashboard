@@ -24,8 +24,9 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 
+  display: flex;
   background-color: #212529;
 }
 </style>

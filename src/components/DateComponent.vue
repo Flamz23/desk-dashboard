@@ -30,7 +30,7 @@ h1 {
     font-family: 'Product Sans Light', sans-serif;
     font-size: 50rem;
 
-    text-align: center;
+    margin: auto;
     color: #F8F9FA;
 }
 
@@ -40,15 +40,27 @@ h1 {
     }
 }
 
-@media all and (max-device-width: 1080px){
+@media all and (max-device-width: 1280px){
     h1 {
         font-size: 30rem;
     }
 }
 
+@media all and (max-device-width: 1080px){
+    h1 {
+        font-size: 20rem;
+    }
+}
+
+@media all and (max-device-width: 900px){
+    h1 {
+        font-size: 16rem;
+    }
+}
+
 @media all and (max-device-width: 720px){
     h1 {
-        font-size: 12rem;
+        font-size: 16rem;
     }
 }
 </style>

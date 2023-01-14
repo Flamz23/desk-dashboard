@@ -20,7 +20,9 @@ import IconFullscreen from './icons/IconFullscreen.vue';
 }
 .nav-buttons {
     border: none;
+    border-color: #6C757D;
     border-radius: 50%;
+    background-color: #212529;
 }
 svg {
     fill: #6C757D;
