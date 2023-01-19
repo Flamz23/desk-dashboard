@@ -2,6 +2,8 @@
 
 This project is a sample dashboard built with VueJS, a progressive JavaScript framework for building user interfaces. Designed for a small tablet or screen that lives on your desk.
 
+![Screenshots](https://i.imgur.com/XMDGdMU_d.webp?maxwidth=760&fidelity=grand)
+
 ### Features
 
 - Light and Dark Modes

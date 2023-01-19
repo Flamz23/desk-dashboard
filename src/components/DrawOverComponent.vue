@@ -3,7 +3,7 @@
         <div class="setting-list">
             <button v-for="item in settingItems">
                 <component :is="item.icon" class="tab"></component>
-                <p> 
+                <p class="setting-desc"> 
                     {{ item.desc }} 
                 </p>                
             </button>
@@ -19,11 +19,12 @@ import IconMeridien from './icons/IconMeridien.vue';
 import IconDate from './icons/IconDate.vue';
 import IconDarkMode from './icons/IconDarkMode.vue';
 import IconWeather from './icons/IconWeather.vue';
+import IconCloseSettings from './icons/IconCloseSettings.vue';
 
 export default {
   data() {
     return {
-      settingItems: [{ desc: 'Fullscreen', icon: 'IconFullscreen' }, { desc: 'Seconds', icon: 'IconSeconds' }, { desc: 'AM/PM', icon: 'IconMeridien' }, { desc: 'Date', icon: 'IconDate' }, { desc: 'Dark mode', icon: 'IconDarkMode' }, { desc: 'Weather', icon: 'IconWeather' }]
+      settingItems: [{ desc: 'Fullscreen', icon: 'IconFullscreen' }, { desc: 'Seconds', icon: 'IconSeconds' }, { desc: 'AM/PM', icon: 'IconMeridien' }, { desc: 'Date', icon: 'IconDate' }, { desc: 'Dark mode', icon: 'IconDarkMode' }, { desc: 'Weather', icon: 'IconWeather' }, { desc: 'Exit', icon: 'IconCloseSettings' }]
     }
   },
 
@@ -34,7 +35,8 @@ export default {
     IconMeridien,
     IconDate,
     IconDarkMode,
-    IconWeather
+    IconWeather,
+    IconCloseSettings
   }
 }
 </script>
@@ -73,18 +75,16 @@ export default {
     white-space: nowrap;
 }
 
+.setting-desc {
+    font-family: 'Product Sans Light', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 /* .drawover-nav:hover  {
     transform: translateY(7rem);
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .icon-wrapper {
-    margin: auto;
-    padding: 0.2rem;
-    border: none;
-    border-radius: 50%;
-    background-color: #212529;
 } */
 
 svg {
