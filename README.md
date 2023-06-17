@@ -2,7 +2,9 @@
 
 This is a simple dashboard built with VueJS. It uses vue-router for page routing and pinia for state management
 
-![Screenshots](https://i.imgur.com/XMDGdMU_d.webp?maxwidth=760&fidelity=grand)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Flamz23/desk-dashboard/master/images/render.webp">
+</p>
 
 ### Features
 
