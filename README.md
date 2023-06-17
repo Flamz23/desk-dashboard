@@ -1,6 +1,6 @@
 # desk-dashboard
 
-This project is a sample dashboard built with VueJS, a progressive JavaScript framework for building user interfaces. Designed for a small tablet or screen that lives on your desk.
+This is a simple dashboard built with VueJS. It uses vue-router for page routing and pinia for state management
 
 ![Screenshots](https://i.imgur.com/XMDGdMU_d.webp?maxwidth=760&fidelity=grand)
 
